@@ -3,8 +3,19 @@ body {
   margin: 0;
   font-family: sans-serif;
 }
+html {
+  scroll-snap-type: y mandatory;
+}
+section {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 /* font-family: 'Figtree', sans-serif; */
-header {
+.section-header {
   background-image: url("GTR_night.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -15,12 +26,11 @@ header {
   align-items: center;
   flex-direction: column;
 }
-nav {
-}
+
 .header-nav-logo {
   width: 40rem;
   margin-top: 0;
-  margin-bottom: 6.4rem;
+  margin-bottom: 2rem;
 }
 h1 {
   color: #fff;
@@ -31,4 +41,22 @@ h1 {
 .header-arrow {
   color: #fff;
   height: 3.6rem;
+}
+/* KNOCKOUT TEXT SCROLL REVEAL */
+.info-section {
+  background-image: url("/photo/nissan-sun.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 40vw 60vw;
+}
+.info-section-article {
+  margin: 0 2.4rem;
+}
+.info-section-div {
+  content: " ";
+  width: 50vw;
 }
