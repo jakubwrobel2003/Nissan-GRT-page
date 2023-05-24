@@ -1,3 +1,13 @@
+/* 
+#ff2828 red
+#383834 black
+#d8cab5 berz
+#0733d1 niebieski
+#ece5e5 bialy
+
+
+*/
+
 body {
   padding: 0;
   margin: 0;
@@ -25,21 +35,22 @@ section {
   display: flex;
   align-items: center;
   flex-direction: column;
+  justify-content: start;
 }
 
 .header-nav-logo {
-  width: 40rem;
+  width: 45rem;
   margin-top: 0;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 h1 {
-  color: #fff;
+  color: #ece5e5;
   text-align: center;
   font-size: 4.8rem;
   font-family: "Figtree";
 }
 .header-arrow {
-  color: #fff;
+  color: #ece5e5;
   height: 3.6rem;
 }
 /* KNOCKOUT TEXT SCROLL REVEAL */
@@ -51,12 +62,75 @@ h1 {
   height: 100vh;
   width: 100vw;
   display: grid;
-  grid-template-columns: 40vw 60vw;
+  grid-template-columns: 50vw 50vw;
 }
 .info-section-article {
-  margin: 0 2.4rem;
+  margin: 0 2rem;
+  padding: 2rem;
+  height: 100vh;
 }
 .info-section-div {
   content: " ";
   width: 50vw;
+}
+.info-section-h2,
+.info-section-paragraf {
+  color: #383834;
+}
+.info-section-h2 {
+  font-size: 6.4rem;
+  font-weight: 800;
+  font-family: "Figtree";
+  letter-spacing: 0.7;
+}
+.info-section-paragraf {
+  padding: 1rem;
+  margin: 3rem;
+  font-family: "Figtree";
+  font-weight: 500;
+  letter-spacing: 1.4;
+  line-height: 1.5;
+  font-size: 1.8rem;
+}
+.engine-section {
+  background-image: url("/photo/gtr-engine.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 30vh 70vh;
+}
+.engine-section-aside {
+  background-color: #383834;
+  opacity: 0.6;
+}
+.engine-section-aside-h2 {
+  margin: 0;
+  font-family: "Figtree";
+  font-weight: 700;
+  font-size: 4.8rem;
+  text-align: center;
+}
+.engine-section-aside-div {
+  margin: 0 4.8rem;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.engine-section-aside {
+  width: 90vw;
+  color: #ece5e5;
+}
+.engine-section-aside-list {
+  list-style-type: none;
+}
+.engine-section-aside-list-item {
+  padding: 1rem 0;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.gallery-section {
+  background-color: #383834;
 }
